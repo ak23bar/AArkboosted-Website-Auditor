@@ -10,6 +10,14 @@
 
 This is an **internal tool** developed for **ArkBoostedAds LLC** to provide comprehensive website audits and SEO analysis for our clients. The tool delivers professional-grade reports with actionable insights across multiple performance categories.
 
+## 📸 Screenshots
+
+### Login Interface
+![Login Page](AAboosted%20ss1.png)
+
+### Main Dashboard
+![Main Interface](AAboosted%20ss.png)
+
 ## 🚀 Features
 
 - **Comprehensive Analysis**: Security, Performance, SEO, Mobile, Content, and UI/UX evaluation
