@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AArkboosted Brand Colors */
+:root {
+  --color-primary: #0A1F44;
+  --color-success: #27AE60;
+  --color-background: #FFFFFF;
+  --color-text: #333333;
+}
+
+/* Custom utilities */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-success {
+  background-color: var(--color-success);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+/* Grade colors */
+.grade-a { color: #27AE60; }
+.grade-b { color: #F39C12; }
+.grade-c { color: #E67E22; }
+.grade-d { color: #E74C3C; }
+.grade-f { color: #C0392B; }
+
+/* Custom animations */
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.pulse-gentle {
+  animation: pulse-gentle 2s infinite;
+}
