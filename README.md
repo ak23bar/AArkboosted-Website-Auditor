@@ -10,6 +10,14 @@
 
 This is an **internal tool** developed for **ArkBoostedAds LLC** to provide comprehensive website audits and SEO analysis for our clients. The tool delivers professional-grade reports with actionable insights across multiple performance categories.
 
+## ✨ Recent Updates
+
+- ✅ Fixed priority actions display in both admin and client modes
+- ✅ Improved PDF generation with proper page breaks
+- ✅ Enhanced backend consistency for category headers
+- ✅ Added fallback parsing logic for robust data handling
+- ✅ Production-ready codebase with cleanup optimizations
+
 ## 📸 Screenshots
 
 ### Login Interface
@@ -72,7 +80,7 @@ npm start
 
 4. **Access the application**
 - Frontend: http://localhost:3001
-- API: http://localhost:8000
+- API: http://localhost:8001
 
 ## 🎯 Usage
 
@@ -120,7 +128,38 @@ cd frontend && npm test
 cd frontend && npm run build
 
 # Backend deployment
-cd backend && uvicorn minimal_audit_api:app --host 0.0.0.0 --port 8000
+cd backend && uvicorn minimal_audit_api:app --host 0.0.0.0 --port 8001
+```
+
+## 🚀 Deployment Options
+
+### ⚠️ GitHub Pages Limitation
+**GitHub Pages cannot host this application** because it only supports static files and our app requires a Python backend server.
+
+### ✅ Recommended Hosting Platforms
+
+| Platform | Frontend | Backend | Free Tier | Notes |
+|----------|----------|---------|-----------|-------|
+| **Vercel** | ✅ | ✅ | Yes | Best for full-stack apps |
+| **Netlify** | ✅ | Functions | Yes | Good for React + serverless |
+| **Railway** | ✅ | ✅ | Yes | Easy full-stack deployment |
+| **Render** | ✅ | ✅ | Yes | Docker support |
+| **Heroku** | ✅ | ✅ | No | Traditional choice (paid) |
+
+### 🔄 Deployment Steps (Vercel Example)
+1. **Frontend**: Connect GitHub repo to Vercel
+2. **Backend**: Deploy as Vercel serverless function or separate service
+3. **Database**: Use hosted SQLite or PostgreSQL
+4. **Environment**: Update API URLs in production
+
+### 📦 Environment Configuration
+```bash
+# Frontend (.env)
+REACT_APP_API_URL=https://your-backend.vercel.app
+
+# Backend (production)
+DATABASE_URL=your-database-url
+CORS_ORIGINS=["https://your-frontend.vercel.app"]
 ```
 
 ## 📈 Website Type Optimization
