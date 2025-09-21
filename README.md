@@ -190,4 +190,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Internal Tool for ArkBoostedAds LLC** | Developed by [Akbar Aman](https://github.com/ak23bar) | Professional Website Analysis for Client Success
+**Internal Tool for ArkBoosted LLC** | Developed by [Akbar Aman](https://github.com/ak23bar) | Professional Website Analysis for Client Success
